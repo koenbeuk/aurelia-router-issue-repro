@@ -1,0 +1,34 @@
+<import from="./welcome-page"></import>
+<import from="./about-page.html"></import>
+<import from="./missing-page"></import>
+
+<h1>Overview</h1>
+
+<h1>Links defined in my-app.html</h1>
+<ul>
+  <li>
+    <a load="route: about-page; params.bind: { id: 'foo.bar'}">load="route: about-page; params.bind: { id: 'foo.bar'}"</a>
+  </li>
+
+  <li>
+    <a load="route: about-page2; params.bind: { id: 'foo.bar'}">load="route: about-page2; params.bind: { id: 'foo.bar'}"</a>
+  </li>
+
+  <li>
+    <a load="about-page2?id=foo.bar">load="about-page2?id=foo.bar"</a>
+  </li>
+
+  <li>
+    <a href="about-page2?id=foo.bar">href="about-page2?id=foo.bar"</a>
+  </li>
+
+  <li>
+    <a load="about-page/foo.bar">load="about-page/foo.bar"</a>
+  </li>
+
+  <li>
+    <a href="about-page/foo.bar">href="about-page/foo.bar"</a>
+  </li>
+</ul>
+
+<au-viewport default="welcome-page" fallback="missing-page"></au-viewport>
